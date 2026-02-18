@@ -86,19 +86,19 @@
 
 							<div class="col-4 col-12-small">
 								<span class="image fit">
-									<img src="images/initial_triangles.png" alt="Primary mold for triangular prism">
+									<img src="images/initial_triangles.png" alt="Initial triangular mold design">
 								</span>
 							</div>
 
 							<div class="col-4 col-12-small">
 								<span class="image fit">
-									<img src="images/stiffer_side.png" alt="Secondary mold for stiff side">
+									<img src="images/stiffer_side.png" alt="Stiffer silicone side integration">
 								</span>
 							</div>
 
 							<div class="col-4 col-12-small">
 								<span class="image fit">
-									<img src="images/stiffer_side.png" alt="Modular row assembly">
+									<img src="images/modular_row.png" alt="Modular row assembly">
 								</span>
 							</div>
 
@@ -129,37 +129,26 @@
 
 						<ol>
 							<li>
-								<strong>Stage A — On Inners / Off Externals</strong><br>
-								The inner rows contract under vacuum. This lifts and shifts the central
-								body forward due to asymmetric bending. Initial forward displacement
-								along the x-axis occurs here.
+								<strong>Stage A — On Inners / Off Externals:</strong>
+								The inner rows contract, lifting and shifting the central body forward.
 							</li>
 
 							<li>
-								<strong>Stage B — On Inners / On Externals</strong><br>
-								The outer rows contract, lowering the robot and anchoring the outer
-								feet to the surface. This stabilizes the body and prevents backward slip.
+								<strong>Stage B — On Inners / On Externals:</strong>
+								The outer rows contract, anchoring the robot and stabilizing its structure.
 							</li>
 
 							<li>
-								<strong>Stage C — Off Inners / On Externals</strong><br>
-								The inner rows reinflate while outer rows remain contracted.
-								The reinflation pushes the body upward and forward against the
-								anchored outer feet. This is the primary propulsion phase.
+								<strong>Stage C — Off Inners / On Externals:</strong>
+								The inner rows reinflate while outer rows remain contracted,
+								generating forward propulsion.
 							</li>
 
 							<li>
-								<strong>Stage D — Off Inners / Off Externals</strong><br>
-								Both groups reinflate, redistributing weight evenly and resetting
-								the robot for the next cycle.
+								<strong>Stage D — Off Inners / Off Externals:</strong>
+								Both groups reinflate and reset the structure for the next cycle.
 							</li>
 						</ol>
-
-						<p>
-							Forward motion emerges from timed load transfer between rows,
-							asymmetric material stiffness, and friction at the reinforced tips.
-							The gait resembles a soft-material analog of inchworm locomotion.
-						</p>
 
 						<hr class="major" />
 
@@ -167,16 +156,12 @@
 
 						<p>
 							The system uses an external vacuum generator for contraction and
-							Arduino-controlled mini pumps for inflation. Valve states are
-							controlled through a timed state-machine sequence.
-						</p>
-
-						<p>
-							System performance is primarily limited by:
+							Arduino-controlled pumps for inflation. Valve states are managed
+							through a timed state-machine sequence.
 						</p>
 
 						<ul>
-							<li>Inflation and deflation response time</li>
+							<li>Inflation/deflation timing</li>
 							<li>Vacuum strength</li>
 							<li>Silicone stiffness</li>
 							<li>Surface friction</li>
@@ -187,9 +172,9 @@
 						<h2>Performance Results</h2>
 
 						<ul>
-							<li><strong>10.6 mm/s</strong> on rigid wood surface</li>
-							<li><strong>7.24 mm/s</strong> on foam surface</li>
-							<li>Fivefold velocity increase after pneumatic redesign</li>
+							<li><strong>10.6 mm/s</strong> on wood</li>
+							<li><strong>7.24 mm/s</strong> on foam</li>
+							<li>5× velocity increase after pneumatic optimization</li>
 						</ul>
 
 						<hr class="major" />
@@ -203,19 +188,33 @@
 							a functional crawling soft robot was successfully created.
 						</p>
 
+						<hr class="major" />
+
+						<h2>Full Technical Report</h2>
 						<p>
-							The work highlights the adaptability of soft robotic manufacturing
-							and provides a foundation for future improvements such as
-							closed-loop control, steering mechanisms, and improved gait efficiency.
+							For a complete breakdown of the mold fabrication process,
+							locomotion modeling, pneumatic control system, and experimental
+							results, download the full project report below.
 						</p>
 
-					</div>
+						<ul class="actions">
+							<li>
+								<a href="files/Soft_Robotics_Report.pdf"
+								   class="button primary icon solid fa-file-pdf"
+								   download>
+								   Download Full Report (PDF)
+								</a>
+							</li>
+						</ul>
+
+					</div> <!-- end .inner -->
 				</section>
 
-			</div>
+			</div> <!-- end #main -->
 
-		</div>
+		</div> <!-- end #wrapper -->
 
+		<!-- Scripts -->
 		<script src="assets/js/jquery.min.js"></script>
 		<script src="assets/js/jquery.scrolly.min.js"></script>
 		<script src="assets/js/jquery.scrollex.min.js"></script>
