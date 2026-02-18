@@ -1,151 +1,163 @@
 <!DOCTYPE HTML>
 <!--
 	Forty by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
 	<head>
-		<title>
-			Two Axis vision based turret</title>
+		<title>RBE 3002 – ROS Navigation, SLAM, and A* Maze Solving</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
+
 	<body class="is-preload">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+		<div id="wrapper">
 
-				<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo"><strong>Project Portfolio</strong> <span>by Nikolas Neathery</span></a>
-						<nav>
-							<a href="#menu">Menu</a>
-						</nav>
-					</header>
+			<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="logo">
+					<strong>Project Portfolio</strong>
+					<span>by Nikolas Neathery</span>
+				</a>
+				<nav>
+					<a href="#menu">Menu</a>
+				</nav>
+			</header>
 
-				<!-- Menu -->
-					<nav id="menu">
-						<ul class="links">
-							<li><a href="index.html">Home</a></li>
-							<li><a href="Who_I_am.html">Who I am</a></li>
-							<li><a href="Projects.html">Projects</a></li>
-							<li><a href="Hobbies.html">Hobbies</a></li>
-							<li><a href="RBE_3002.html">RBE_3002</a></li>
-						</ul>
-						<ul class="actions stacked">
-							<li><a href="#" class="button primary fit">Get Started</a></li>
-							<li><a href="#" class="button fit">Log In</a></li>
-						</ul>
-					</nav>
+			<!-- Menu -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="Who_I_am.html">Who I am</a></li>
+					<li><a href="Projects.html">Projects</a></li>
+					<li><a href="Hobbies.html">Hobbies</a></li>
+					<li><a href="RBE_3002.html">RBE 3002</a></li>
+				</ul>
+			</nav>
 
-				<!-- Main -->
-					<div id="main" class="alt">
+			<!-- Main -->
+			<div id="main" class="alt">
 
-						<!-- One -->
-							<section id="one">
-								<div class="inner">
-									<header class="major">
-										<h1>RBE: 3002</h1>
-									</header>
+				<section id="one">
+					<div class="inner">
 
-									<!-- Content -->
-										<h2 id="content">overview</h2>
-										<p>Following RBE 3001 was the introduction to ROS. The goal of this project was to navigate a maze using A* and SLAM for localization. For this we used turtle bots with lidar. To start, everything was done in SIM then was migrated to a physical robot. This demonstrated that this transition is rarely seamless.</p>
-										<div class="row">
-											<div class="col-6 col-12-small">
-												<video controls="controls" width="600" height="400" name="Video Name"><source src="images/RBE3002(2).mp4"></video>
-											</div>
-										<div class="col-6 col-12-small">
-											<h3>How it works</h3>
-											<p>The first challenge of the project was figuring out how to map the unknown area. We accomplished this by approaching the largest unknown area or frontier and reassessing the area until there were no longer unknown areas or frontiers. Once this was completed the robot was placed in a random location and needed to localize itself then drive to a desired position</p>
-											<!-- <h3>Magna odio tempus commodo</h3>
-											<p>In arcu accumsan arcu adipiscing accumsan orci ac. Felis id enim aliquet. Accumsan ac integer lobortis commodo ornare aliquet accumsan erat tempus amet porttitor. Ante commodo blandit adipiscing integer semper orci eget. Faucibus commodo adipiscing mi eu nullam accumsan morbi arcu ornare odio mi adipiscing nascetur lacus ac interdum morbi accumsan vis mi accumsan ac praesent.</p> -->
-										</div>
-											<!-- Break -->
-											
+						<header class="major">
+							<h1>RBE 3002 – ROS Navigation, SLAM, and A* Maze Solving</h1>
+						</header>
 
-				<!-- Contact
-					<section id="contact">
-						<div class="inner">
-							<section>
-								<form method="post" action="#">
-									<div class="fields">
-										<div class="field half">
-											<label for="name">Name</label> -->
-											<!-- <input type="text" name="name" id="name" />
-										</div>
-										<div class="field half">
-											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
-										</div>
-										<div class="field">
-											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="6"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
-										<li><input type="reset" value="Clear" /></li>
-									</ul>
-								</form>
-							</section>
-							<section class="split">
-								<section>
-									<div class="contact-method">
-										<span class="icon solid alt fa-envelope"></span>
-										<h3>Email</h3>
-										<a href="#">information@untitled.tld</a>
-									</div>
-								</section>
-								<section>
-									<div class="contact-method">
-										<span class="icon solid alt fa-phone"></span>
-										<h3>Phone</h3> -->
-										<!-- <span>(000) 000-0000 x12387</span>
-									</div>
-								</section>
-								<section>
-									<div class="contact-method">
-										<span class="icon solid alt fa-home"></span>
-										<h3>Address</h3>
-										<span>1234 Somewhere Road #5432<br />
-										Nashville, TN 00000<br />
-										United States of America</span>
-									</div>
-								</section>
-							</section>
+						<!-- Video (half width, centered) -->
+						<div class="row gtr-50 gtr-uniform" style="margin-bottom: 2rem;">
+							<div class="col-6 col-12-small" style="margin: 0 auto;">
+								<video controls style="width: 100%; border-radius: 6px;">
+									<source src="images/RBE3002(2).mp4" type="video/mp4">
+								</video>
+							</div>
 						</div>
-					</section> -->
 
-				<!-- Footer -->
-					<!-- <footer id="footer">
-						<div class="inner">
-							<ul class="icons">
-								<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-								<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								<li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-							</ul>
-							<ul class="copyright">
-								<li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
-							</ul>
+						<h2>Overview</h2>
+						<p>
+							RBE 3002 is an introduction to ROS-based mobile robot autonomy.
+							The primary goal of this project was to autonomously explore and map an unknown maze,
+							localize within the generated map using SLAM, and plan a collision-free path to a target
+							location using A*.
+						</p>
+
+						<p>
+							Development began entirely in simulation, then was migrated to a physical TurtleBot
+							equipped with LiDAR. The project highlighted one of the biggest lessons in robotics:
+							<strong>simulation-to-real deployment is rarely seamless</strong>, and real sensor noise,
+							timing, and calibration issues fundamentally affect system behavior.
+						</p>
+
+						<hr class="major" />
+
+						<h2>How It Works</h2>
+
+						<h3>Mapping & Frontier Exploration</h3>
+						<p>
+							To map an unknown environment, we used a frontier-based exploration strategy.
+							Frontiers represent boundaries between known free space and unknown space.
+							The robot repeatedly selected the best frontier (largest/most informative unknown region),
+							drove to it, updated the occupancy grid using LiDAR, then repeated until no
+							actionable frontiers remained.
+						</p>
+
+						<h3>Localization with SLAM</h3>
+						<p>
+							Once a map was created, the robot was placed into an unknown (random) pose and needed to
+							relocalize itself. LiDAR scans were matched against the occupancy grid map to estimate pose.
+							This allowed consistent navigation even after being moved, as long as the robot could
+							obtain recognizable scan features.
+						</p>
+
+						<h3>Path Planning with A*</h3>
+						<p>
+							With a known map and estimated pose, the robot planned a route to a goal location using A*.
+							The occupancy grid was treated as a graph, with obstacle inflation applied to maintain a safety
+							margin around walls. The resulting path was then executed through ROS navigation controls.
+						</p>
+
+						<hr class="major" />
+
+						<h2>Simulation → Real Robot Challenges</h2>
+						<ul>
+							<li><strong>Sensor noise:</strong> LiDAR scans were less clean than simulation and required tuning.</li>
+							<li><strong>Odometry drift:</strong> wheel slip and small errors accumulated over longer trajectories.</li>
+							<li><strong>Timing + latency:</strong> ROS node update rates mattered more on real hardware.</li>
+							<li><strong>Map consistency:</strong> small offsets in transforms could distort or misalign the map.</li>
+						</ul>
+
+						<hr class="major" />
+
+						<h2>Skills Developed</h2>
+						<div class="row">
+							<div class="col-6 col-12-small">
+								<h3>Autonomy & Robotics</h3>
+								<ul>
+									<li>SLAM fundamentals and occupancy grid mapping</li>
+									<li>Frontier-based exploration</li>
+									<li>Grid-based planning with A*</li>
+									<li>Robot safety margins (obstacle inflation)</li>
+								</ul>
+							</div>
+							<div class="col-6 col-12-small">
+								<h3>ROS & Systems Integration</h3>
+								<ul>
+									<li>ROS nodes, topics, transforms (TF)</li>
+									<li>Simulation testing + real robot deployment</li>
+									<li>LiDAR integration and parameter tuning</li>
+									<li>Debugging real-time robotics systems</li>
+								</ul>
+							</div>
 						</div>
-					</footer>
 
-			</div> -->
+						<hr class="major" />
+
+						<h2>Outcome</h2>
+						<p>
+							The final system successfully mapped an unknown maze environment, localized from a random
+							start pose, and navigated to target positions using A* planning. More importantly, the project
+							provided hands-on experience with ROS-based autonomy and the practical difficulties involved
+							in transitioning from simulation to physical hardware.
+						</p>
+
+					</div> <!-- end .inner -->
+				</section>
+
+			</div> <!-- end #main -->
+
+		</div> <!-- end #wrapper -->
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
 
 	</body>
 </html>
