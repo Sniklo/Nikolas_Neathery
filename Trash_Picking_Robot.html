@@ -2,12 +2,11 @@
 <!--
 	Forty by HTML5 UP
 	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+	Free for personal and commercial use under the CCA 3.0 license
 -->
 <html>
 	<head>
-		<title>
-			Trash Collecting Robot *In Progress*</title>
+		<title>Making WALL-E – Autonomous Litter Collecting Robot</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -15,138 +14,140 @@
 	</head>
 	<body class="is-preload">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+		<div id="wrapper">
 
-				<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo"><strong>Project Portfolio</strong> <span>by Nikolas Neathery</span></a>
-						<nav>
-							<a href="#menu">Menu</a>
-						</nav>
-					</header>
+			<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="logo">
+					<strong>Project Portfolio</strong>
+					<span>by Nikolas Neathery</span>
+				</a>
+				<nav>
+					<a href="#menu">Menu</a>
+				</nav>
+			</header>
 
-				<!-- Menu -->
-					<nav id="menu">
-						<ul class="links">
-							<li><a href="index.html">Home</a></li>
-							<li><a href="Who_I_am.html">Who I am</a></li>
-							<li><a href="Projects.html">Projects</a></li>
-							<li><a href="Hobbies.html">Hobbies</a></li>
-							<li><a href="Trash_Picking_Robot.html">Trash Collecting Robot</a></li>
+			<!-- Menu -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="Who_I_am.html">Who I am</a></li>
+					<li><a href="Projects.html">Projects</a></li>
+					<li><a href="Hobbies.html">Hobbies</a></li>
+					<li><a href="Trash_Picking_Robot.html">Trash Collecting Robot</a></li>
+				</ul>
+			</nav>
+
+			<!-- Main -->
+			<div id="main" class="alt">
+
+				<section id="one">
+					<div class="inner">
+
+						<header class="major">
+							<h1>Making WALL-E – Autonomous Litter Collecting Robot</h1>
+						</header>
+
+						<p><strong>Master’s Thesis | Advanced Robot Systems | University of Southern Denmark (2025)</strong></p>
+
+						<p>
+							Developed a fully functional outdoor autonomous robot capable of detecting,
+							navigating to, and collecting litter in public environments such as parks,
+							sidewalks, and open fields. The system integrates mechanical design,
+							embedded electronics, computer vision, and autonomous navigation
+							within a ROS2-based architecture.
+						</p>
+
+						<hr class="major" />
+
+						<h2>Project Overview</h2>
+						<p>
+							WALL-E was designed to address the growing need for automated environmental cleanup
+							by combining real-time perception, terrain-capable mobility, and an active collection mechanism.
+							The robot operates across asphalt, pavement, grass, and inclines up to 20°, while maintaining
+							high collection reliability.
+						</p>
+
+						<h2>Key Contributions</h2>
+
+						<h3>Mechanical & Hardware Design</h3>
+						<ul>
+							<li>Designed and built a four-wheel drivetrain capable of handling uneven outdoor terrain.</li>
+							<li>Engineered a dual counter-rotating brush collection system with an adaptive arm mechanism.</li>
+							<li>Implemented gas-spring counterbalancing for passive load support and vibration resilience.</li>
+							<li><strong>98.4% litter collection success rate</strong> across 15 diverse trash types.</li>
 						</ul>
-						<ul class="actions stacked">
-							<li><a href="#" class="button primary fit">Get Started</a></li>
-							<li><a href="#" class="button fit">Log In</a></li>
+
+						<h3>Electronics & Embedded Systems</h3>
+						<ul>
+							<li>Designed custom 12V power distribution system with voltage regulation and fuse protection.</li>
+							<li>Integrated CIM and 775pro motors with CAN-based motor controllers.</li>
+							<li>Sensor stack: Ouster 3D LiDAR, IMU, encoders, and OAK-D Lite AI camera.</li>
+							<li>Dual Raspberry Pi architecture for distributed control and perception.</li>
 						</ul>
-					</nav>
 
-				<!-- Main -->
-					<div id="main" class="alt">
+						<h3>Computer Vision & AI</h3>
+						<ul>
+							<li>Trained and fine-tuned YOLOv11n model for real-time litter detection.</li>
+							<li><strong>mAP@0.5: 93.7%</strong></li>
+							<li><strong>F1 score: 0.88</strong></li>
+							<li>Two-stage domain adaptation pipeline for real-world robustness.</li>
+							<li>~3.3 ms total inference time for real-time edge deployment.</li>
+						</ul>
 
-						<!-- One -->
-							<section id="one">
-								<div class="inner">
-									<header class="major">
-										<h1>Trash Collecting Robot</h1>
-									</header>
+						<h3>Software & Autonomy</h3>
+						<ul>
+							<li>Full ROS2-based modular architecture.</li>
+							<li>SLAM Toolbox + 3D LiDAR for mapping and localization.</li>
+							<li>Manual override using TwistMux and Xbox controller.</li>
+							<li>Simulation in Gazebo + Nav2 for testing and validation.</li>
+						</ul>
 
-									<!-- Content -->
-										<h2 id="content">overview</h2>
-										<p>For my masters thesis myself and one other student worked to develope a mobile robot from scratch to pick up trash and clutter outdoors. The robot is designed and built from the ground up using a limited budged and limited manufacturing capabilities. </p>
-										<div class="row">
-											<div class="col-6 col-12-small">
-												<h3>How it works</h3>
-												<p>This project is still in development. For this poject I am responsible for design and fabricated of the robot as well as the hardware integration. The drivetrain was constructed from aluminum extrusion and sheet metal, constrained by limited manufacturing capabilities. To keep costs low due to a restricted budget, hardware included two Raspberry Pis: one for navigation and motor control, and the other for computer vision and AI. Off-the-shelf motor controllers were integrated with the Raspberry Pis via a CAN network, with ROS 2 and Docker ensuring seamless system integration.
-													on the hardware side of things the goal was to keep the robot a cheap as possible. To do this rasperry pis were used for the brains of the robot. Two to be precise one for navigation and motor control and the other for computer vision and AI. ROS2 and docker was used to integrate the two together. The robot also incorperates multiple sensors like encoders, IMUs and lidars. The robot is near the point of being able to drive, the next step of development being the actual trash collection. Some prototyping has been done with scaled down trash and cheap materials like toilet bushes. </p>
-											</div>
-											<div class="col-6 col-12-small">
-												<img src="images/full_physical_robot.jpg" width="796" height="612"></img>
-												<!-- <h3>Magna odio tempus commodo</h3>
-												<p>In arcu accumsan arcu adipiscing accumsan orci ac. Felis id enim aliquet. Accumsan ac integer lobortis commodo ornare aliquet accumsan erat tempus amet porttitor. Ante commodo blandit adipiscing integer semper orci eget. Faucibus commodo adipiscing mi eu nullam accumsan morbi arcu ornare odio mi adipiscing nascetur lacus ac interdum morbi accumsan vis mi accumsan ac praesent.</p> -->
-											</div>
-											<!-- Break -->
-											
+						<hr class="major" />
 
-				<!-- Contact -->
-					<!-- <section id="contact">
-						<div class="inner">
-							<section>
-								<form method="post" action="#">
-									<div class="fields">
-										<div class="field half">
-											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
-										</div>
-										<div class="field half">
-											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
-										</div>
-										<div class="field">
-											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="6"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
-										<li><input type="reset" value="Clear" /></li>
-									</ul>
-								</form>
-							</section>
-							<section class="split">
-								<section>
-									<div class="contact-method">
-										<span class="icon solid alt fa-envelope"></span>
-										<h3>Email</h3>
-										<a href="#">information@untitled.tld</a>
-									</div>
-								</section>
-								<section>
-									<div class="contact-method">
-										<span class="icon solid alt fa-phone"></span>
-										<h3>Phone</h3>
-										<span>(000) 000-0000 x12387</span>
-									</div>
-								</section>
-								<section>
-									<div class="contact-method">
-										<span class="icon solid alt fa-home"></span>
-										<h3>Address</h3>
-										<span>1234 Somewhere Road #5432<br />
-										Nashville, TN 00000<br />
-										United States of America</span>
-									</div>
-								</section>
-							</section>
+						<h2>Technologies Used</h2>
+						<p>
+							ROS2 · Nav2 · SLAM Toolbox · YOLOv11 · Python · C++ · CAN Bus · Raspberry Pi ·
+							Ouster LiDAR · OAK-D · Gazebo · Fusion 360 · CNC Manufacturing
+						</p>
+
+						<h2>Outcome</h2>
+						<p>
+							Successfully delivered a modular proof-of-concept autonomous litter collection platform
+							that demonstrates high detection accuracy, robust terrain traversal, and reliable trash pickup.
+							The system establishes a scalable foundation for future fully autonomous environmental robotics solutions.
+						</p>
+
+						<!-- Images -->
+						<div class="row gtr-50 gtr-uniform" style="margin-top: 2rem;">
+							<div class="col-6 col-12-small">
+								<span class="image fit">
+									<img src="images/full_physical_robot.jpg" alt="Physical robot prototype">
+								</span>
+							</div>
+
+							<div class="col-6 col-12-small">
+								<span class="image fit">
+									<img src="images/drive_train_main_view.jpeg" alt="CAD model render">
+								</span>
+							</div>
 						</div>
-					</section> -->
 
-				<!-- Footer -->
-					<!-- <footer id="footer">
-						<div class="inner">
-							<ul class="icons">
-								<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-								<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								<li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-							</ul>
-							<ul class="copyright">
-								<li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
-							</ul>
-						</div>
-					</footer>
+					</div>
+				</section>
 
-			</div> -->
+			</div>
+
+		</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
 
 	</body>
 </html>
